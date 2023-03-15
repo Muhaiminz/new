@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time</title>
+</head>
+<body>
+    <h1>GREETING FOR THE DAY!!!!!</h1>
+    <script type="text/javascript">
+        var d = new Date();
+        var time = d.getHours();
+        if (time < 12) {
+            document.write("<b>Good Morning</b>");
+
+        }
+        else if (time == 12 && d.getMinutes == 00 && d.getSeconds == 00) {
+
+            document.write("<b>Good Noon</b>");
+        }
+        else if (time >= 12 && time <= 15) {
+
+            document.write("<b>Good Afternoon</b>");
+        }
+        else if (time > 15 && time < 24) {
+
+            document.write("<b>Good Evening</b>");
+        }
+        else {
+
+            document.write("<b>Good Night</b>");
+        }
+
+    </script>
+
+</body>
+
+</HTML>
